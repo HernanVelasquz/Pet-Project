@@ -6,7 +6,7 @@ import co.com.sofka.logicafacturacion.Factura;
 import co.com.sofka.logicafacturacion.Registro;
 import co.com.sofka.logicafacturacion.values.ParqueaderoId;
 
-public class GenerarFacturacion implements Command {
+public class GenerarFacturacion extends Command {
     private final ParqueaderoId parqueaderoId;
     private final Registro registro;
     private final Empleado empleado;
@@ -19,19 +19,19 @@ public class GenerarFacturacion implements Command {
         this.factura = factura;
     }
 
-    public ParqueaderoId ObtenerParqueaderoId() {
+    public ParqueaderoId getParqueaderoId() {
         return parqueaderoId;
     }
 
-    public Registro ObtenerRegistro() {
+    public Registro getrRegistro() {
         return registro;
     }
 
-    public Empleado ObtenerEmpleado() {
+    public Empleado getEmpleado() {
         return empleado;
     }
 
-    public Factura ObtenerFactura() {
+    public Factura getFactura() {
         return factura;
     }
 }

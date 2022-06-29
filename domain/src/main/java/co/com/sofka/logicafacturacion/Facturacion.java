@@ -39,12 +39,12 @@ public class Facturacion extends AggregateEvent<ParqueaderoId> {
         appendChange(new HoraDeSalidaDeFacturaActualizada(horaSalida)).apply();
     }
 
-    public void modificarNombreDePersona(Nombre nombre){
+    public void modificarNombreDeEmpleado(Nombre nombre){
         Objects.requireNonNull(nombre);
         appendChange(new NombreDeEmpleadoActualizado(nombre)).apply();
     }
 
-    public void modificarTelefonoDePersona(Telefono telefono){
+    public void modificarTelefonoDeEmpleado(Telefono telefono){
         Objects.requireNonNull(telefono);
         appendChange(new TelefonoDeEmpleadoActualizado(telefono)).apply();
     }
