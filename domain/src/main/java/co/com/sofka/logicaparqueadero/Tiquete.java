@@ -3,15 +3,15 @@ package co.com.sofka.logicaparqueadero;
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.logicaparqueadero.values.HoraIngreso;
 import co.com.sofka.logicaparqueadero.values.TipoVehiculo;
-import co.com.sofka.logicaparqueadero.values.TiquetaId;
+import co.com.sofka.logicaparqueadero.values.TiqueteId;
 
 import java.util.Objects;
 
-public class Tiquete extends Entity<TiquetaId> {
+public class Tiquete extends Entity<TiqueteId> {
     protected TipoVehiculo tipoVehiculo;
     protected HoraIngreso horaIngreso;
 
-    public Tiquete(TiquetaId entityId, TipoVehiculo tipoVehiculo, HoraIngreso horaIngreso) {
+    public Tiquete(TiqueteId entityId, TipoVehiculo tipoVehiculo, HoraIngreso horaIngreso) {
         super(entityId);
         this.tipoVehiculo = tipoVehiculo;
         this.horaIngreso = horaIngreso;
