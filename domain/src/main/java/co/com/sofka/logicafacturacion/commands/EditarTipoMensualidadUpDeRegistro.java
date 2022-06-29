@@ -8,7 +8,9 @@ public class EditarTipoMensualidadUpDeRegistro implements Command {
     private final ParqueaderoId parqueaderoId;
     private final TipoMensualidad tipoMensualidad;
 
-    public ActualizarUpTipoMensualidadDeRegistro(ParqueaderoId parqueaderoId, TipoMensualidad tipoMensualidad) {
+
+
+    public EditarTipoMensualidadUpDeRegistro(ParqueaderoId parqueaderoId, TipoMensualidad tipoMensualidad) {
         this.parqueaderoId = parqueaderoId;
         this.tipoMensualidad = tipoMensualidad;
     }

@@ -8,12 +8,11 @@ public class EditarTipoMensualidadDownDeRegistro implements Command {
     private final ParqueaderoId parqueaderoId;
     private final TipoMensualidad tipoMensualidad;
 
-    public ActualizarDownTipoMensualidadDeRegistro(ParqueaderoId parqueaderoId, TipoMensualidad tipoMensualidad) {
+
+
+    public EditarTipoMensualidadDownDeRegistro(ParqueaderoId parqueaderoId, TipoMensualidad tipoMensualidad) {
         this.parqueaderoId = parqueaderoId;
         this.tipoMensualidad = tipoMensualidad;
-    }
-
-    public EditarTipoMensualidadDownDeRegistro() {
     }
 
     public ParqueaderoId obtenerParqueaderoId() {

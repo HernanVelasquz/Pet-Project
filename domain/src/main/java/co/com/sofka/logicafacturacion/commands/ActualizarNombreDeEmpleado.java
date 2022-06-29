@@ -17,7 +17,7 @@ public class ActualizarNombreDeEmpleado implements Command {
         return parqueaderoId;
     }
 
-    public Nombre getNombre() {
+    public Nombre ObtnerNombre() {
         return nombre;
     }
 }
