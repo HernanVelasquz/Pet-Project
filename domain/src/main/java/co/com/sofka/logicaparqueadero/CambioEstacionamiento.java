@@ -14,7 +14,7 @@ public class CambioEstacionamiento extends EventChange {
             estacionamiento.tiquetes = new ArrayList<>();
         });
 
-        apply((HoraDeIngresoDeTiqueteCambiada event) ->{
+        apply((HoraDeIngresoDeTiqueteCambiada event) -> {
             estacionamiento.tiquetePorId(event.getTiquetaId()).modificarHoraDeIngreso(event.getHoraIngreso());
         });
 
