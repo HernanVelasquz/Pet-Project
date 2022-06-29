@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
+<<<<<<< HEAD
 public class Telefono implements ValueObject<String> {
 
     private final String value;
@@ -16,10 +17,26 @@ public class Telefono implements ValueObject<String> {
         if(value.length()>10){
             throw new IllegalArgumentException("El telefono no puede ser mayor a 10caracteres");
         }
+=======
+public class Telefono implements ValueObject<Integer> {
+
+    private final Integer value;
+
+    public Telefono(Integer value) {
+
+        if(value < 10){
+            throw new IllegalArgumentException("Numero demasiado corto");
+        }
+        if(value > 10){
+            throw new IllegalArgumentException("Numero demasiado largo");
+        }
+
+>>>>>>> stevent
         this.value = Objects.requireNonNull(value);
     }
 
     @Override
+<<<<<<< HEAD
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -37,3 +54,9 @@ public class Telefono implements ValueObject<String> {
         return value;
     }
 }
+=======
+    public Integer value() {
+        return null;
+    }
+}
+>>>>>>> stevent
