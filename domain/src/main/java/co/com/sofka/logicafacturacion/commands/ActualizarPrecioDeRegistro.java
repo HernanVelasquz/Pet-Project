@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicafacturacion.values.ParqueaderoId;
 import co.com.sofka.logicafacturacion.values.Precio;
 
-public class ActualizarPrecioDeRegistro implements Command {
+public class ActualizarPrecioDeRegistro extends Command {
     private final ParqueaderoId parqueaderoId;
     private final Precio precio;
 

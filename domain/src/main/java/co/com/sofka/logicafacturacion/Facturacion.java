@@ -74,4 +74,6 @@ public class Facturacion extends AggregateEvent<ParqueaderoId> {
         return this.factura;
     }
 
+    public void modificarNombreDePersona(Nombre obtnerNombre) {
+    }
 }

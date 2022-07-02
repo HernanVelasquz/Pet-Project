@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicafacturacion.values.ParqueaderoId;
 import co.com.sofka.logicafacturacion.values.TipoMensualidad;
 
-public class EditarTipoMensualidadDownDeRegistro implements Command {
+public class EditarTipoMensualidadDownDeRegistro extends Command {
     private final ParqueaderoId parqueaderoId;
     private final TipoMensualidad tipoMensualidad;
 

@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicafacturacion.values.Nombre;
 import co.com.sofka.logicafacturacion.values.ParqueaderoId;
 
-public class ActualizarNombreDeEmpleado implements Command {
+public class ActualizarNombreDeEmpleado extends Command {
     private final ParqueaderoId parqueaderoId;
     private final Nombre nombre;
 
