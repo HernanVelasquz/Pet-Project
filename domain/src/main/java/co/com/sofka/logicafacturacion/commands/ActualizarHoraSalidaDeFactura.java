@@ -4,7 +4,7 @@ import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicafacturacion.values.HoraSalida;
 import co.com.sofka.logicafacturacion.values.ParqueaderoId;
 
-public class ActualizarHoraSalidaDeFactura implements Command {
+public class ActualizarHoraSalidaDeFactura extends Command {
     private final ParqueaderoId parqueaderoId;
     private final HoraSalida horaSalida;
 
@@ -13,11 +13,11 @@ public class ActualizarHoraSalidaDeFactura implements Command {
         this.horaSalida = horaSalida;
     }
 
-    public ParqueaderoId getParkingId() {
+    public ParqueaderoId ObtenerParqueaderoId() {
         return parqueaderoId;
     }
 
-    public HoraSalida getHoraSalida() {
+    public HoraSalida ObtenerHoraSalida() {
         return horaSalida;
     }
 }
