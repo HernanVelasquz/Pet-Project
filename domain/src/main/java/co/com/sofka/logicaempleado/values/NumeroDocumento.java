@@ -4,21 +4,15 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Edad implements ValueObject<Integer> {
+public class NumeroDocumento implements ValueObject<Integer> {
 
     private final Integer value;
     
 
-    public Edad(Integer value) {
+    public NumeroDocumento(Integer value) {
         boolean isNumeric = true;
 
 
-        if (value < 18) {
-            throw new IllegalArgumentException("Solo se permiten mayores de edad");
-        }
-        if (value < 0) {
-            throw new IllegalArgumentException("La edad no es correcta");
-        }
         this.value = Objects.requireNonNull(value);
     }
 

@@ -23,6 +23,6 @@ public class NombresCompletos implements ValueObject<String> {
 
     @Override
     public String value() {
-        return null;
+        return value;
     }
 }
