@@ -1,4 +1,4 @@
-package co.com.sofka.logicafacturacion.values;
+package co.com.sofka.logicaempleado.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 

@@ -1,9 +1,7 @@
-package co.com.sofka.logicafacturacion;
+package co.com.sofka.logicaempleado;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.logicafacturacion.values.*;
-
-import java.util.Objects;
+import co.com.sofka.logicaempleado.values.*;
 
 public class Responsable extends Entity<ResponsableId> {
 
