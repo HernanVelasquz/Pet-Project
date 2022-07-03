@@ -3,6 +3,10 @@ package co.com.sofka.logicaempleado.values;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> piter
 public class Telefono implements ValueObject<String> {
 
     private final String value;
@@ -15,10 +19,27 @@ public class Telefono implements ValueObject<String> {
         if(value.length()>10){
             throw new IllegalArgumentException("El telefono no puede ser mayor a 10caracteres");
         }
+=======
+
+public class Telefono implements ValueObject<Integer> {
+
+    private final Integer value;
+
+    public Telefono(Integer value) {
+
+        if(value < 10){
+            throw new IllegalArgumentException("Numero demasiado corto");
+        }
+        if(value > 10){
+            throw new IllegalArgumentException("Numero demasiado largo");
+        }
+
+>>>>>>> 85be20028e7101d5d4cb87fedab4833aa159dc6b
         this.value = Objects.requireNonNull(value);
     }
 
     @Override
+<<<<<<< HEAD
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -36,3 +57,9 @@ public class Telefono implements ValueObject<String> {
         return value;
     }
 }
+=======
+    public Integer value() {
+        return null;
+    }
+}
+>>>>>>> 85be20028e7101d5d4cb87fedab4833aa159dc6b

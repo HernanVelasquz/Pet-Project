@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="8a144384-cab2-476a-ba68-25d1a70d6288" name="Changes" comment="" />
+=======
+    <list default="true" id="5cc868f4-3c9d-4e66-9e78-c4bb74d14d9e" name="Changes" comment="" />
+>>>>>>> piter
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+<<<<<<< HEAD
+=======
+        <option value="JUnit5 Test Class" />
+>>>>>>> piter
       </list>
     </option>
   </component>
@@ -23,6 +31,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -30,12 +39,15 @@
       </MavenGeneralSettings>
     </option>
   </component>
+=======
+>>>>>>> piter
   <component name="ProjectId" id="2BDyknf8MerLHh9LgWGulxCo1Fw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -45,10 +57,32 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;coverage&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "settings.editor.selected.configurable": "coverage"
+  }
+}]]></component>
+>>>>>>> piter
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.com.sofka.logicaparqueadero" />
     </key>
+<<<<<<< HEAD
+=======
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="co.com.sofka.loqicaparqueadero" />
+    </key>
+>>>>>>> piter
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
