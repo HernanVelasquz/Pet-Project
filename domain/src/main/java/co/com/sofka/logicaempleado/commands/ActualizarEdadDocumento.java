@@ -1,4 +1,4 @@
-package co.com.sofka.logicaempleado.comandos;
+package co.com.sofka.logicaempleado.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicaempleado.values.NumeroDocumento;

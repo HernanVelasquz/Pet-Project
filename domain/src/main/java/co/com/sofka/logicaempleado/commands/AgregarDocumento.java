@@ -1,18 +1,17 @@
-package co.com.sofka.logicaempleado.eventos;
+package co.com.sofka.logicaempleado.commands;
 
-import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.domain.generic.Command;
 import co.com.sofka.logicaempleado.values.DocumentoId;
 import co.com.sofka.logicaempleado.values.NumeroDocumento;
 import co.com.sofka.logicaempleado.values.NombresCompletos;
 
-public class DocumentoAgregado extends DomainEvent {
+public class AgregarDocumento extends Command {
+
     private final DocumentoId documentoId;
     private final NombresCompletos nombresCompletos;
     private final NumeroDocumento edad;
 
-
-    public DocumentoAgregado(DocumentoId documentoId, NombresCompletos nombresCompletos, NumeroDocumento edad) {
-        super("sofka.logicaempleado.documentoagregado");
+    public AgregarDocumento(DocumentoId documentoId, NombresCompletos nombresCompletos, NumeroDocumento edad) {
         this.documentoId = documentoId;
         this.nombresCompletos = nombresCompletos;
         this.edad = edad;

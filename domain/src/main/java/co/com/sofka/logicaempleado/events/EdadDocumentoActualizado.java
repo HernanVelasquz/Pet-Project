@@ -1,4 +1,4 @@
-package co.com.sofka.logicaempleado.eventos;
+package co.com.sofka.logicaempleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.logicaempleado.values.NumeroDocumento;
