@@ -31,7 +31,7 @@ public class Estacionamiento extends AggregateEvent<EstacionamientoId> {
 
     public Estacionamiento(EstacionamientoId estacionamientoId){
         super(estacionamientoId);
-//        subscribe(new Estacionamiento(this));
+        subscribe(new CambioEstacionamiento(this));
     }
 
     public static Estacionamiento from(EstacionamientoId idPublicacion, List<DomainEvent> events){
