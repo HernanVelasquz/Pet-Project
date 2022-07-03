@@ -1,19 +1,20 @@
-package co.com.sofka.logicaempleado.values;
+package co.com.sofka.logicafacturacion.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
-public class Telefono implements ValueObject<String> {
+
+public class Nombre implements ValueObject<String> {
 
     private final String value;
 
-    public Telefono(String value) {
-        if(value.length()<7){
-            throw new IllegalArgumentException("El telefono no puede ser menor a 8 caracteres");
+    public Nombre(String value) {
+        if(value.length()<5){
+            throw new IllegalArgumentException("El nombreCliente no puede ser menor a 5 caracteres");
         }
 
-        if(value.length()>10){
-            throw new IllegalArgumentException("El telefono no puede ser mayor a 10caracteres");
+        if(value.length()>75){
+            throw new IllegalArgumentException("El nombreCliente no puede ser mayor a 100 caracteres");
         }
         this.value = Objects.requireNonNull(value);
     }
@@ -22,8 +23,8 @@ public class Telefono implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        var telefono1 = (Telefono) o;
-        return Objects.equals(value, telefono1.value);
+        var nombre1 = (Nombre) o;
+        return Objects.equals(value, nombre1.value);
     }
 
     @Override

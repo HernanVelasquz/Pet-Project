@@ -1,20 +1,23 @@
-package co.com.sofka.logicaempleado.values;
+package co.com.sofka.logicafacturacion.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
-public class Telefono implements ValueObject<String> {
+
+public class HoraSalida implements ValueObject<String> {
 
     private final String value;
 
-    public Telefono(String value) {
-        if(value.length()<7){
-            throw new IllegalArgumentException("El telefono no puede ser menor a 8 caracteres");
+    public HoraSalida(String value) {
+
+        if(value.length()<1){
+            throw new IllegalArgumentException("La Hora de salida no puede ser menor a 2 caracteres");
         }
 
-        if(value.length()>10){
-            throw new IllegalArgumentException("El telefono no puede ser mayor a 10caracteres");
+        if(value.length()>8){
+            throw new IllegalArgumentException("La Hora de salida no puede ser mayor a 8 caracteres");
         }
+
         this.value = Objects.requireNonNull(value);
     }
 
@@ -22,8 +25,8 @@ public class Telefono implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        var telefono1 = (Telefono) o;
-        return Objects.equals(value, telefono1.value);
+        HoraSalida that = (HoraSalida) o;
+        return Objects.equals(value, that.value);
     }
 
     @Override
