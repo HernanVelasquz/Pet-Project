@@ -8,7 +8,7 @@ public class NombreDeEmpleadoActualizado extends DomainEvent {
     private final Nombre nombre;
 
     public NombreDeEmpleadoActualizado(Nombre nombre) {
-        super("sofka.facturacion.nombredeempleadoactualizado");
+        super("co.com.sofka.logicafacturacion.events.NombreDeEmpleadoActualizado");
         this.nombre = nombre;
     }
 
